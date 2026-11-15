@@ -4,6 +4,14 @@ All notable changes to Cortex are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and the project uses [Semantic Versioning](https://semver.org/).
 
+## [2.3.1] — 2026-11-15
+
+Fork by marvice-2019. Simplest-approach hook: browser automation is now allowed
+for site testing (pytest, `playwright test`, `with_server.py`, inline scripts
+that click, fill, screenshot, capture console output or assert) and for skills,
+package-install and grep/ls/cat commands. Opening a browser only to read a page
+is still blocked. Adds `tests/test_simplest_approach.py` (13 cases).
+
 ## [2.3.0] — 2026-06-09
 
 Multitenant state. v2.2 isolated multi-user *outputs* (per-person closings) and
